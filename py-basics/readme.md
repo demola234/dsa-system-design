@@ -4,3 +4,5 @@ My python is a bit rusty, so I'm going to do some basic exercises to get back in
 This is a collection of exercises I've done to get back into python.
 
 # Exercises
+- [x] [Games](./games.py)
+- [ ] 
