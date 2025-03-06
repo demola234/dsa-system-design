@@ -1,0 +1,9 @@
+# General
+*.DS_Store
+Readme.md
+*.log
+*.log.*
+*.log-*
+*.log.*.*.*
+
+# Dart
