@@ -19,5 +19,5 @@ I have organized this repository into several sections, each focusing on a diffe
 - [Interviews](./interviews/README.md): This section contains resources and tips for preparing for technical interviews, including common interview questions and strategies for tackling coding challenges.
 - [Resources](./resources/README.md): This section contains additional resources, including books, websites, and online courses, that I have found helpful in learning data structures and algorithms.
 I hope that this repository will be a valuable resource for anyone looking to learn more about data structures and algorithms or improve their problem-solving skills. If you have any questions or suggestions, please feel free to open an issue or submit a pull request. Happy coding! 🚀
-```
+
 
