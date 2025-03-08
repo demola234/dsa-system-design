@@ -84,4 +84,42 @@ Let's say we have book heights: [7, 2, 9, 4, 5]
 
 And there you have it - all your books are sorted from shortest to tallest!
 
-The cool thing about QuickSort is that it's like having a team of helpers, where each helper sorts a smaller pile of books at the same time, so it gets done much faster than if you had to compare each book one by one.
+
+Imagine you have a messy pile of toys, and you need to line them up from smallest to biggest.
+
+## Here's how QuickSort works:
+
+1. **Pick a special toy** - Let's call this toy the "ruler." Usually we pick the last toy in our pile.
+
+2. **Make two separate piles**:
+   - First pile: All toys smaller than the ruler
+   - Second pile: All toys bigger than the ruler
+
+3. **How do we make these piles?**
+   - Look at each toy one by one
+   - If it's smaller than the ruler, put it in the "smaller" pile
+   - If it's bigger than the ruler, put it in the "bigger" pile
+
+4. **Put them back together in order**:
+   - First, all the smaller toys (still unsorted)
+   - Then, the ruler toy
+   - Last, all the bigger toys (still unsorted)
+
+5. **The magic part**: Do the same thing again!
+   - Sort the "smaller toys" pile using the same steps
+   - Sort the "bigger toys" pile using the same steps
+
+6. **When do we stop?** When a pile has just one toy (or no toys), it's already sorted!
+
+## Quick Example:
+
+Let's say we have these toys: [7, 2, 9, 4, 5]
+
+1. Pick the last toy as the ruler: 5
+2. Make two piles:
+   - Smaller: [2, 4]
+   - Bigger: [7, 9]
+3. Line them up: [2, 4, 5, 7, 9]
+4. The smaller and bigger piles still need sorting, but they're smaller problems, so we do the same steps on each pile.
+
+The reason it's called "Quick" Sort is because it's usually really fast at sorting things by breaking the big problem into smaller problems!
