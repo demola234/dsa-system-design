@@ -440,25 +440,27 @@ int removeDuplicates(List<int> nums) {
 
 ```dart
 int maxSubArraySum(List<int> nums, int k) {
-  if (nums.length < k) {
-    return 0;
-  }
-  
-  // Sum of first k elements
-  var maxSum = 0;
-  for (var i = 0; i < k; i++) {
-    maxSum += nums[i];
-  }
-  
-  var windowSum = maxSum;
-  
-  // Slide the window from left to right
-  for (var i = k; i < nums.length; i++) {
-    windowSum = windowSum - nums[i - k] + nums[i];
-    maxSum = windowSum > maxSum ? windowSum : maxSum;
-  }
-  
-  return maxSum;
+ int n = nums.length;
+    if (k > n) return 0;
+
+    int maxSum = 0, currentSum = 0, start = 0;
+    Set<int> seen = {};
+
+    for (int end = 0; end < n; end++) {
+      while (seen.contains(nums[end]) || seen.length >= k) {
+        currentSum -= nums[start];
+        seen.remove(nums[start]);
+        start++;
+      }
+
+      seen.add(nums[end]);
+      currentSum += nums[end];
+
+      if (seen.length == k) {
+        maxSum = maxSum > currentSum ? maxSum : currentSum;
+      }
+    }
+    return maxSum;
 }
 ```
 
