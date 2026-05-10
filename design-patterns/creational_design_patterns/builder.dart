@@ -88,8 +88,8 @@ class UserBuilder {
     }
 
     return User._(
-      id: _id,
-      name: _name,
+        id: _id,
+        name: _name,
         email: _email,
         phone: _phone,
         address: _address,
@@ -111,7 +111,6 @@ void main() {
     .setState('CA')
     .setZip('12345')
     .build();
-
 
   print(user);
 }
